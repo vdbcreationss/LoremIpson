@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="c-siteheader">
+      <div class="o-container">
+        <div class="c-siteheader__logonav">
+          <a class="c-siteheader__logolink" href="#"
+            ><img
+              src="img/svg/logo.svg"
+              alt="Logo Lorem Ipson"
+              class="c-siteheader__logo o-fluidimage"
+            />
+            Lorem Ipson</a
+          >
+          <nav>
+            <ul class="c-mainnav">
+              <li class="c-mainnav__item">
+                <a href="#ourphilo" class="c-mainnav__link">Our philosophy</a>
+              </li>
+              <li class="c-mainnav__item">
+                <a href="#overview" class="c-mainnav__link">Overview</a>
+              </li>
+              <li class="c-mainnav__item">
+                <a href="#yourproduct" class="c-mainnav__link">Your product</a>
+              </li>
+              <li class="c-mainnav__item c-mainnav__item--contact">
+                <a href="#footer" class="c-mainnav__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="c-hamburger js-navopen" href="#footer"
+            ><img src="img/svg/menumobile.svg" alt="Menu burger logo"
+          /></a>
+        </div>
+        <div class="c-mobilemenu js-mobilemenu">
+          <button class="c-mobilemenu__close js-navclose">
+            <img src="img/svg/xmenumobile.svg" alt="Bouton quitter logo" />
+          </button>
+          <nav>
+            <ul class="c-mobilenav">
+              <li class="c-mobilenav__item">
+                <a href="#ourphilo" class="c-mobilenav__link">Our philosophy</a>
+              </li>
+              <li class="c-mobilenav__item">
+                <a href="#overview" class="c-mobilenav__link">Overview</a>
+              </li>
+              <li class="c-mobilenav__item">
+                <a href="#yourproduct" class="c-mobilenav__link"
+                  >Your product</a
+                >
+              </li>
+              <li class="c-mobilenav__item c-mobilenav__item--contact">
+                <a href="#" class="c-mobilenav__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="c-headerinfo o-grid">
+          <div class="c-headerinfo__content js-headerinfo__contentitem">
+            <h2
+              class="c-headerinfo__subtitle c-title c-title--2 c-textgradient c-textgradient--black-grey js-headerinfo__contentitem"
+            >
+              Mutch more than
+            </h2>
+            <h1
+              class="c-headerinfo__title c-title c-title--1 c-textgradient js-headerinfo__contentitem"
+            >
+              just a pen.
+            </h1>
+            <p class="c-headerinfo__text js-headerinfo__contentitem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi ipsum,
+              nibh non faucibus.
+            </p>
+            <div class="c-headerinfo__allbtn js-headerinfo__contentitem">
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                class="c-btn c-btn--icontext"
+                ><img
+                  src="img/svg/headerinfo__btn-icon.svg"
+                  alt="Play icon"
+                />Watch the video</a
+              >
+              <a href="#" class="c-btn c-btn--cta">Buy the product</a>
+            </div>
+          </div>
+          <div class="c-headercontent__illu">
+            <svg
+              width="100%"
+              viewbox="0 0 442 547"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="illu">
+                <g id="g-shadows">
+                  <g
+                    id="pen-shadow"
+                    opacity="0.1"
+                    filter="url(#filter0_f_102_1080)"
+                  >
+                    <path
+                      d="M104.527 521.596C87.9894 521.596 74.5832 518.97 74.5832 515.73C74.5832 512.491 87.9894 509.865 104.527 509.865C121.064 509.865 134.47 512.491 134.47 515.73C134.47 518.97 121.064 521.596 104.527 521.596Z"
+                      fill="#07030C"
+                    ></path>
+                  </g>
+                  <g
+                    id="circle-shadow"
+                    opacity="0.08"
+                    filter="url(#filter1_f_102_1080)"
+                  >
+                    <path
+                      d="M295.405 528.308C259.121 528.308 229.706 522.677 229.706 515.73C229.706 508.784 259.121 503.152 295.405 503.152C331.69 503.152 361.104 508.784 361.104 515.73C361.104 522.677 331.69 528.308 295.405 528.308Z"
+                      fill="#07030C"
+                    ></path>
+                  </g>
+                </g>
+
+                <g id="g-perso">
+                  <g id="circle-big">
+                    <path
+                      id="Vector_6"
+                      d="M289.52 225.204C224.108 225.204 171.078 278.234 171.078 343.646C171.078 409.058 224.108 462.088 289.52 462.088C354.932 462.088 407.962 409.058 407.962 343.646C407.962 278.234 354.932 225.204 289.52 225.204ZM241.946 343.646C241.946 313.845 258.423 289.005 280.267 283.454C283.291 282.683 286.399 282.293 289.52 282.292C315.793 282.292 337.093 309.76 337.093 343.646C337.093 377.532 315.793 405 289.52 405C281.898 405 274.696 402.703 268.312 398.579C252.681 388.526 241.946 367.702 241.946 343.646Z"
+                      fill="url(#paint4_linear_102_1080)"
+                    ></path>
+                    <path
+                      id="Vector_7"
+                      opacity="0.2"
+                      d="M327.251 406.312C293.129 421.903 271.202 401.45 268.312 398.579C274.696 402.703 281.898 405 289.52 405C315.794 405 337.093 377.532 337.093 343.646C337.093 309.76 315.794 282.292 289.52 282.292C286.399 282.293 283.291 282.683 280.268 283.454C304.327 269.572 351.091 283.454 362.685 323.96C368.777 345.246 369.651 386.938 327.251 406.312Z"
+                      fill="url(#paint5_radial_102_1080)"
+                    ></path>
+                    <path
+                      id="Vector 2"
+                      opacity="0.1"
+                      d="M316.602 262.312C327.345 257.429 321.078 236.945 316.602 227.314L225.443 249.697C213.776 255.937 207.541 272.823 207.541 282.264C207.541 291.706 209.707 297.989 219.338 300.974C229.342 300.974 237.244 289.334 251.895 280.219C270.208 268.824 303.172 268.417 316.602 262.312Z"
+                      fill="black"
+                    ></path>
+                  </g>
+                  <g id="perso">
+                    <path
+                      id="Vector_8"
+                      d="M282.489 99.0404C282.489 99.0404 252.98 99.8432 248.102 101.616C243.223 103.39 241.049 116.074 241.049 116.074L263.978 123.292L281.116 122.322L294.017 123.229L286.818 104.339L282.489 99.0404Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_9"
+                      d="M281.221 89.3161C281.221 89.3161 279.276 96.8276 283.583 102.147C287.891 107.467 265.058 126.42 265.058 126.42L253.015 124.325C253.015 124.325 255.67 101.246 252.102 95.4035C248.534 89.5604 281.221 89.3161 281.221 89.3161Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_10"
+                      opacity="0.1"
+                      d="M281.221 89.3161C281.221 89.3161 279.276 96.8276 283.583 102.147C287.891 107.467 265.058 126.42 265.058 126.42L253.015 124.325C253.015 124.325 255.67 101.246 252.102 95.4035C248.534 89.5604 281.221 89.3161 281.221 89.3161Z"
+                      fill="#07030C"
+                    ></path>
+                    <path
+                      id="Vector_11"
+                      d="M201.099 308.95L227.681 344.26L209.539 354.871L184.574 313.955L201.099 308.95Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_12"
+                      d="M221.153 345.549C221.153 345.549 229.83 335.454 229.441 337.706C229.051 339.957 235.616 359.047 229.515 360.897C223.413 362.746 171.085 367.639 170.369 361.719C169.652 355.799 185.975 351.661 185.975 351.661C185.975 351.661 195.677 342.326 197.826 343.273C199.976 344.219 221.153 345.549 221.153 345.549Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_13"
+                      d="M207.434 338.31L193.621 377.963L176.094 371.954L191.35 338.705L207.434 338.31Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_14"
+                      d="M173.549 256.474L179.821 265.41C179.821 265.41 209.86 307.198 206.668 310.57C203.476 313.941 190.192 326.696 183.438 324.224C176.685 321.753 150.791 279.866 150.791 279.866L158.947 253.968L173.549 256.474Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_15"
+                      d="M302.945 248.021C302.945 248.021 296.219 260.586 279.165 264.852C262.11 269.117 244.317 277.815 243.669 277.703C243.021 277.592 241.243 276.628 240.804 279.169C240.365 281.71 235.696 286.15 235.696 286.15C235.696 286.15 216.878 350.256 209.671 350.326C202.465 350.396 187.696 345.237 187.369 343.219C187.041 341.202 209.414 275.728 209.616 274.457L212.229 259.218C212.229 259.218 182.699 263.937 179.946 264.803C177.193 265.668 151.072 280.197 151.072 280.197C151.072 280.197 127.724 260.998 151.072 242.806C174.42 224.613 214.592 211.238 214.592 211.238L228.991 207.175L241.536 206.428L243.383 199.329L273.115 201.046L304.171 214.226L302.945 248.021Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_16"
+                      d="M259.852 49.8268C246.292 50.5603 237.748 53.6634 239.021 77.2095C239.804 91.6774 245.887 103.094 259.448 102.361C273.008 101.627 286.603 89.1308 285.821 74.6783C285.04 60.2257 273.413 49.0934 259.852 49.8268Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_17"
+                      d="M284.657 99.7386L281.869 99.2569C281.869 99.2569 276.837 118.664 261.274 121.868C261.274 121.868 253.608 112.653 253.921 111.097C254.235 109.54 247.844 101.246 244.436 105.889C241.028 110.531 245.265 192.341 242.401 193.848C239.536 195.356 233.396 196.871 238.337 202.302C243.279 207.734 262.919 215.036 267.268 212.515C271.617 209.995 280.51 188.641 284.35 181.45C288.19 174.26 294.345 149.827 294.345 149.827C294.345 149.827 302.199 123.062 297.369 117.016C292.539 110.971 284.657 99.7386 284.657 99.7386Z"
+                      fill="#E5E2E7"
+                    ></path>
+                    <path
+                      id="Vector_18"
+                      d="M262.494 200.431C263.01 206.13 263.895 211.79 265.142 217.374C266.278 221.919 267.602 224.662 269.108 224.544C272.962 224.257 274.683 229.912 275.617 236.411C276.579 243.336 276.579 251.225 277.109 254.017C277.806 257.703 282.287 260.516 291.243 259.693C296.577 259.087 301.811 257.801 306.82 255.867C318.912 251.462 318.557 215.755 316.529 189.262C315.295 173.038 313.462 160.256 313.462 160.256C313.462 160.256 317.135 149.282 318.341 141.764C318.577 140.392 318.696 139.002 318.696 137.61C318.515 131.041 306.541 113.289 299.307 102.231C292.072 91.1729 282.099 99.2848 282.099 99.2848L285.584 109.679C285.584 109.679 280.259 117.917 280.217 125.736C280.175 133.554 267.428 139.251 262.863 143.02C259.992 145.429 260.061 177.262 262.494 200.431Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_19"
+                      d="M252.541 104.437C252.541 104.437 251.6 103.983 247.774 103.501C243.195 102.929 236.894 104.513 235.431 108.898C232.741 116.933 225.172 149.631 225.172 149.631C225.172 149.631 222.021 187.014 220.607 195.273C219.192 203.531 219.91 210.84 218.516 215.175C217.122 219.51 232.309 207.091 237.905 208.704C243.502 210.317 247.098 189.367 246.394 182.051C245.69 174.735 245.098 166.79 247.042 159.279C248.987 151.767 245.537 131.886 245.648 127.327C245.76 122.769 258.096 112.737 252.541 104.437Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_20"
+                      d="M236.044 219.175C236.044 219.175 211.525 232.579 209.177 251.651C206.828 270.722 241.975 233.186 241.975 233.186L236.044 219.175Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_21"
+                      d="M222.05 205.653C222.05 205.653 214.529 243.588 202.828 241.577C191.126 239.567 209.365 203.468 209.365 203.468L222.05 205.653Z"
+                      fill="#F9CAAF"
+                    ></path>
+                    <path
+                      id="Vector_22"
+                      d="M190.557 371.407C190.557 371.407 196.148 377.853 197.532 376.876C198.917 375.9 202.082 389.247 199.229 391.806C196.375 394.365 185.286 398.551 185.169 402.796C185.052 407.042 155.358 406.202 154.298 401.755C153.239 397.308 158.023 387.151 161.384 385.288C164.744 383.426 177.186 366.302 177.186 366.302C177.186 366.302 186.924 367.735 190.557 371.407Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_23"
+                      opacity="0.1"
+                      d="M239.954 242.38C245.641 238.359 261.518 237.361 275.617 236.432C281.799 236.034 287.647 235.65 292.135 235.036C296.456 234.436 300.345 230.477 303.802 224.565C309.036 215.629 313.274 202.226 316.528 189.29C315.295 173.038 313.462 160.256 313.462 160.256C313.462 160.256 317.135 149.282 318.341 141.764C317.518 140.605 316.452 139.64 315.218 138.936C300.262 132.514 285.988 195.782 284.176 205.709C284.141 205.87 284.12 206.03 284.099 206.163C283.214 211.273 273.715 215.643 265.205 217.374C259.964 218.442 255.085 218.512 252.834 217.123C246.931 213.493 228.775 228.027 227.395 228.439C226.015 228.851 231.786 248.174 239.954 242.38Z"
+                      fill="#07030C"
+                    ></path>
+                    <path
+                      id="Vector_24"
+                      d="M315.149 135.048C315.149 135.048 326.021 140.186 321.247 164.207C316.473 188.229 306.848 229.081 292.135 231.127C277.422 233.172 248.129 232.704 239.954 238.485C231.779 244.265 225.959 224.962 227.332 224.523C228.705 224.083 246.847 209.576 252.778 213.214C258.709 216.851 282.615 210.498 284.03 202.247C285.444 193.995 299.955 128.507 315.149 135.048Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_25"
+                      d="M236.797 123.522L224.858 151.286C224.858 151.286 223.652 150.685 222.258 155.02C220.865 159.356 220.202 163.167 217.756 166.015C215.31 168.864 204.423 209.493 204.096 211.391C203.768 213.29 219.136 219.859 222.565 214.568C225.994 209.276 236.797 123.522 236.797 123.522Z"
+                      fill="#393042"
+                    ></path>
+                    <path
+                      id="Vector_26"
+                      d="M276.846 75.8758C275.886 75.556 275.816 74.2695 275.847 73.2285C275.994 67.7836 273.06 62.0162 267.966 60.1293C265.998 59.4592 263.908 59.2189 261.839 59.4246C258.904 59.6426 256.037 60.4155 253.389 61.7024C251.991 62.3916 250.615 63.2212 249.064 63.3607C248.041 63.4542 243.6 64.4721 242.567 64.5883C240.322 64.8563 238.145 66.7196 236.06 65.8539C233.975 64.9882 233.777 62.3577 233.852 60.1992C234.037 55.2742 238.161 48.6911 241.685 45.2162C244.34 42.5856 248.166 41.5311 251.872 41.0797C256.193 40.6514 260.546 40.6518 264.867 41.081C270.724 41.5301 276.73 42.3435 281.867 45.183C287.004 48.0226 291.143 53.3674 291.055 59.2484C291.036 60.4755 290.832 61.6993 290.836 62.9201C290.905 65.906 292.32 68.6939 292.894 71.6248C293.296 73.7783 293.244 75.9923 292.739 78.1243C292.235 80.2563 291.291 82.259 289.967 84.0032C287.827 86.7803 280.595 89.1078 280.502 92.6093L280.502 88.0513C279.895 87.5267 279.487 86.8095 279.344 86.0193C279.202 85.2292 279.334 84.414 279.719 83.7098L281.607 77.9128C282.054 76.8857 282.168 75.7442 281.932 74.6491C280.555 70.5811 278.458 76.4043 276.846 75.8758Z"
+                      fill="#393042"
+                    ></path>
+                  </g>
+                </g>
+                <g id="pen">
+                  <path
+                    id="Vector_27"
+                    d="M35.3697 79.6342L100.36 406.767C100.43 407.119 100.449 407.479 100.416 407.836L96.6606 453.583C96.6218 454.142 96.4001 454.673 96.0298 455.094C95.6594 455.514 95.161 455.802 94.6113 455.911C94.0617 456.02 93.4913 455.945 92.9883 455.698C92.4853 455.451 92.0776 455.045 91.8281 454.543L89.4435 449.812L71.3263 413.642C71.1726 413.337 71.0602 413.014 70.9921 412.68L6.14071 86.2479C6.0228 85.6543 6.02293 85.0434 6.14112 84.45C6.25932 83.8565 6.49325 83.2922 6.82955 82.7891C7.16585 82.286 7.59791 81.8542 8.10112 81.5181C8.60433 81.182 9.16883 80.9484 9.76234 80.8305C10.0593 80.7715 10.3417 80.6543 10.5933 80.4858C10.8449 80.3173 11.0606 80.1007 11.2282 79.8485C11.3958 79.5963 11.5119 79.3135 11.5698 79.0163C11.6277 78.7191 11.6263 78.4134 11.5656 78.1168L8.30242 61.6912C8.00724 60.2002 8.16244 58.6551 8.7482 57.2525C9.33397 55.8499 10.3238 54.6534 11.5918 53.8152C12.4189 53.2636 13.3465 52.8803 14.3218 52.6872L16.2748 52.2992C18.2671 51.9034 20.3349 52.3153 22.0235 53.4441C23.712 54.573 24.883 56.3263 25.2788 58.3186L28.6092 75.0821C28.7081 75.5802 29.0009 76.0185 29.423 76.3007C29.8452 76.583 30.3621 76.6859 30.8602 76.587C31.3566 76.4883 31.8676 76.4891 32.3637 76.5891C32.8598 76.6892 33.3312 76.8866 33.7505 77.17C34.1698 77.4533 34.5289 77.817 34.8068 78.24C35.0847 78.663 35.276 79.1368 35.3697 79.6342Z"
+                    fill="#32293A"
+                  ></path>
+                  <path
+                    id="Vector_28"
+                    d="M27.6828 81.1613L92.6735 408.295C92.7431 408.645 92.8874 409.371 92.962 409.747C84.7369 413.151 78.7478 414.249 71.2789 413.599C71.1252 413.295 71.0128 412.971 70.9447 412.637L6.10325 86.2553C5.88649 85.0441 6.15361 83.7962 6.84724 82.7799C7.54087 81.7636 8.60562 81.06 9.81252 80.8205C10.3925 80.6816 10.8958 80.3227 11.216 79.8195C11.5361 79.3164 11.6481 78.7084 11.5282 78.1242L8.26496 61.6987C7.96977 60.2076 8.12497 58.6625 8.71074 57.2599C9.29651 55.8574 10.2864 54.6608 11.5543 53.8226C13.0444 54.1149 14.4141 54.8436 15.4891 55.916C16.5641 56.9885 17.2961 58.3563 17.592 59.8457L20.9223 76.6092C21.0199 77.1009 21.3064 77.5347 21.7202 77.8174C22.1341 78.1002 22.6423 78.2094 23.1358 78.1215C23.6343 78.0173 24.1487 78.0135 24.6487 78.1105C25.1487 78.2075 25.6244 78.4032 26.0478 78.6863C26.4712 78.9694 26.834 79.3341 27.1147 79.7591C27.3954 80.1841 27.5886 80.6608 27.6828 81.1613Z"
+                    fill="#393042"
+                  ></path>
+                </g>
+                <g id="circles" opacity="0.9">
+                  <g id="circle-medium">
+                    <path
+                      id="Vector"
+                      d="M404.168 30.9816C383.274 14.0894 352.641 17.3333 335.749 38.2268C318.857 59.1203 322.101 89.7533 342.995 106.645C363.888 123.538 394.521 120.294 411.413 99.4002C428.305 78.5067 425.061 47.8737 404.168 30.9816ZM357.737 88.4107C349.345 81.6257 349.635 67.3515 358.386 56.528C367.136 45.7045 381.033 42.4314 389.425 49.2164C397.817 56.0013 397.528 70.2755 388.777 81.099C380.026 91.9225 366.129 95.1957 357.737 88.4107Z"
+                      fill="#2E3192"
+                    ></path>
+                    <path
+                      id="Vector_2"
+                      d="M404.168 30.9816C383.274 14.0894 352.641 17.3333 335.749 38.2268C318.857 59.1203 322.101 89.7533 342.995 106.645C363.888 123.538 394.521 120.294 411.413 99.4002C428.305 78.5067 425.061 47.8737 404.168 30.9816ZM358.386 56.528C366.081 47.0092 377.759 43.33 386.17 47.198C387.335 47.7326 388.429 48.4106 389.425 49.2164C397.817 56.0013 397.528 70.2755 388.777 81.099C380.026 91.9225 366.129 95.1957 357.737 88.4107C355.303 86.4424 353.595 83.8491 352.621 80.883C350.225 73.6356 352.173 64.2118 358.386 56.528Z"
+                      fill="url(#paint0_linear_102_1080)"
+                    ></path>
+                    <path
+                      id="Vector_3"
+                      opacity="0.2"
+                      d="M369.45 98.5735C354.525 94.7418 352.803 82.5464 352.621 80.883C353.596 83.8491 355.303 86.4424 357.737 88.4107C366.13 95.1957 380.026 91.9225 388.777 81.099C397.528 70.2755 397.818 56.0014 389.426 49.2164C388.429 48.4106 387.335 47.7326 386.17 47.198C397.44 48.9771 408.792 65.4877 402.035 81.4199C398.484 89.7922 387.996 103.335 369.45 98.5735Z"
+                      fill="url(#paint1_radial_102_1080)"
+                    ></path>
+                  </g>
+                  <g id="circle-small">
+                    <path
+                      id="Vector_4"
+                      d="M121.597 120.204C107.867 128.117 103.151 145.664 111.064 159.394C118.976 173.124 136.523 177.84 150.253 169.927C163.983 162.014 168.699 144.468 160.786 130.738C152.873 117.008 135.327 112.292 121.597 120.204ZM125.939 150.821C122.334 144.566 122.788 137.358 126.701 133.551C127.243 133.023 127.848 132.565 128.503 132.187C134.018 129.009 141.812 132.198 145.911 139.311C150.01 146.424 148.862 154.766 143.347 157.944C141.747 158.866 139.958 159.255 138.119 159.162C133.622 158.943 128.849 155.87 125.939 150.821Z"
+                      fill="url(#paint2_linear_102_1080)"
+                    ></path>
+                    <path
+                      id="Vector_5"
+                      opacity="0.2"
+                      d="M151.425 153.655C146.149 161.056 139.072 159.415 138.118 159.162C139.957 159.255 141.747 158.866 143.347 157.944C148.862 154.766 150.01 146.424 145.911 139.311C141.812 132.198 134.018 129.009 128.503 132.188C127.848 132.565 127.243 133.023 126.701 133.551C130.072 127.726 141.567 124.983 148.901 132.083C152.755 135.814 157.982 144.46 151.425 153.655Z"
+                      fill="url(#paint3_radial_102_1080)"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_102_1080"
+                  x="56.5833"
+                  y="491.865"
+                  width="95.8872"
+                  height="47.7314"
+                  filterunits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feflood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feflood>
+                  <feblend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  ></feblend>
+                  <fegaussianblur
+                    stddeviation="9"
+                    result="effect1_foregroundBlur_102_1080"
+                  ></fegaussianblur>
+                </filter>
+                <filter
+                  id="filter1_f_102_1080"
+                  x="211.706"
+                  y="485.152"
+                  width="167.398"
+                  height="61.1559"
+                  filterunits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feflood
+                    flood-opacity="0"
+                    result="BackgroundImageFix"
+                  ></feflood>
+                  <feblend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  ></feblend>
+                  <fegaussianblur
+                    stddeviation="9"
+                    result="effect1_foregroundBlur_102_1080"
+                  ></fegaussianblur>
+                </filter>
+                <lineargradient
+                  id="paint0_linear_102_1080"
+                  x1="366.336"
+                  y1="0.394897"
+                  x2="383.813"
+                  y2="139.647"
+                  gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#8E3BF7"></stop>
+                  <stop offset="1" stop-color="#3BE4F2"></stop>
+                </lineargradient>
+                <radialgradient
+                  id="paint1_radial_102_1080"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientunits="userSpaceOnUse"
+                  gradienttransform="translate(362.604 49.5003) rotate(56.7213) scale(64.4171 46.8776)"
+                >
+                  <stop offset="0.620524"></stop>
+                  <stop offset="0.828248" stop-opacity="0"></stop>
+                </radialgradient>
+                <lineargradient
+                  id="paint2_linear_102_1080"
+                  x1="96.7356"
+                  y1="134.532"
+                  x2="177.077"
+                  y2="154.468"
+                  gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#8E3BF7"></stop>
+                  <stop offset="1" stop-color="#3BE4F2"></stop>
+                </lineargradient>
+                <radialgradient
+                  id="paint3_radial_102_1080"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientunits="userSpaceOnUse"
+                  gradienttransform="translate(122.967 147.008) rotate(-12.1892) scale(37.9944 27.6493)"
+                >
+                  <stop offset="0.620524"></stop>
+                  <stop offset="0.828248" stop-opacity="0"></stop>
+                </radialgradient>
+                <lineargradient
+                  id="paint4_linear_102_1080"
+                  x1="171.078"
+                  y1="225.204"
+                  x2="417.312"
+                  y2="462.088"
+                  gradientunits="userSpaceOnUse"
+                >
+                  <stop stop-color="#8E3BF7"></stop>
+                  <stop offset="1" stop-color="#3BE4F2"></stop>
+                </lineargradient>
+                <radialgradient
+                  id="paint5_radial_102_1080"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientunits="userSpaceOnUse"
+                  gradienttransform="translate(239.175 323.884) rotate(17.7662) scale(156.829 114.128)"
+                >
+                  <stop offset="0.620524"></stop>
+                  <stop offset="0.828248" stop-opacity="0"></stop>
+                </radialgradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="o-container">
+        <div id="ourphilo" class="c-pagesection c-ourphilo js-ourphilo">
+          <div class="c-pagesection__bg">
+            <div class="o-container">
+              <div class="c-ourphilo__content">
+                <div class="c-ourphilo__titlegroup c-titlegroup">
+                  <h3 class="c-title c-title--3">Our philosophy</h3>
+                  <p class="c-titlegroup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fringilla sed massa nunc ut scelerisque. Interdum eget hac
+                    tempor, tristique semper. Etiam pharetra sed bibendum porta
+                    maecenas et risus consequat. Nisi, vestibulum diam netus ut
+                    pellentesque aliquam maecenas.
+                  </p>
+                </div>
+                <div class="c-textimage c-textimage--invert o-grid">
+                  <picture class="c-textimage__img">
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="img/signature-l.jpg"
+                    />
+                    <source
+                      media="(min-width: 750px)"
+                      srcset="img/signature-m.jpg"
+                    />
+                    <source
+                      srcset="
+                        img/signature-s.jpg    275w,
+                        img/signature-s@2x.jpg 550w
+                      "
+                      sizes="100vw"
+                    />
+                    <img
+                      class="o-fluidimage js-anim__clippath"
+                      src="img/signature-s.jpg"
+                      alt="Person signing documents"
+                    />
+                  </picture>
+                  <div class="c-textimage__alltxt">
+                    <h4 class="c-title c-title--4">
+                      An important thing for importants moments
+                    </h4>
+                    <p class="c-textimage__texte">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sagittis ornare ac gravida ut donec. Imperdiet elit
+                      tincidunt sed tempus sed adipiscing. Ipsum lorem arcu
+                      risus odio blandit id velit dolor. At rhoncus volutpat
+                      pretium augue.
+                    </p>
+                    <a
+                      href="#ourphilo"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+                <div class="c-textimage o-grid">
+                  <picture class="c-textimage__img">
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="img/learn-l.jpg"
+                    />
+                    <source
+                      media="(min-width: 750px)"
+                      srcset="img/learn-m.jpg"
+                    />
+                    <source
+                      srcset="img/learn-s.jpg 275w, img/learn-s@2x.jpg 550w"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="o-fluidimage js-anim__clippath"
+                      src="img/learn-s.jpg"
+                      alt="Mother teaching to his son"
+                    />
+                  </picture>
+                  <div class="c-textimage__alltxt">
+                    <h4 class="c-title c-title--4">
+                      A normal thing for normal moments
+                    </h4>
+                    <p class="c-textimage__texte">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sagittis ornare ac gravida ut donec. Imperdiet elit
+                      tincidunt sed tempus sed adipiscing. Ipsum lorem arcu
+                      risus odio blandit id velit dolor. At rhoncus volutpat
+                      pretium augue.
+                    </p>
+                    <a
+                      href="#ourphilo"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-ourphilo__alldeco">
+            <img
+              class="c-deco-circle c-ourphilo__deco--1"
+              src="img/svg/deco-circle/circle1.svg"
+              alt="Decoration circle"
+            />
+            <img
+              class="c-deco-circle c-ourphilo__deco--2"
+              src="img/svg/deco-circle/circle2.svg"
+              alt="Decoration circle"
+            />
+            <img
+              class="c-deco-circle c-ourphilo__deco--3"
+              src="img/svg/deco-circle/circle3.svg"
+              alt="Decoration circle"
+            />
+          </div>
+        </div>
+        <div id="overview" class="c-pagesection c-overview">
+          <div class="c-overview__titlegroup c-titlegroup">
+            <h3 class="c-title c-title--3 js-overview">Overview</h3>
+            <p class="c-titlegroup__text js-mutchmore">Mutch more than</p>
+            <p class="c-titlegroup__text">just a pen.</p>
+          </div>
+          <div class="c-overview__allcontent">
+            <img
+              class="c-overview__pen js-pen"
+              src="img/pen-l-m.png"
+              alt="Bic noir Lorem Ipson"
+            />
+            <ul
+              class="c-overview__content js-overview__content o-grid o-grid--2cols-medium"
+            >
+              <li class="c-overview__carditem">
+                <article class="c-overview__cardarticle c-cardshadow o-grid">
+                  <img
+                    src="img/cup.png"
+                    class="c-overview__cardimage"
+                    alt="3D icon mug"
+                  />
+                  <div class="c-overview__cardtext">
+                    <h4 class="c-title c-title--4">Comfort</h4>
+                    <p class="c-overview__cardtext">
+                      Lorem ipsum dolora situ alet, consectetur adipiscing elit.
+                      A enim, augue ullamcorper elept tristique sed.
+                    </p>
+                    <a
+                      href="#overview"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="c-overview__carditem">
+                <article class="c-overview__cardarticle c-cardshadow o-grid">
+                  <img
+                    src="img/page.png"
+                    class="c-overview__cardimage js-pen"
+                    alt="3D icon mug"
+                  />
+                  <div class="c-overview__cardtext">
+                    <h4 class="c-title c-title--4">Daily use</h4>
+                    <p class="c-overview__cardtext">
+                      Lorem ipsum dolora situ alet, consectetur adipiscing elit.
+                      A enim, augue ullamcorper elept tristique sed.
+                    </p>
+                    <a
+                      href="#overview"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </article>
+              </li>
+              <li class="c-overview__carditem">
+                <article class="c-overview__cardarticle c-cardshadow o-grid">
+                  <img
+                    src="img/tablet.png"
+                    class="c-overview__cardimage"
+                    alt="3D icon mug"
+                  />
+                  <div class="c-overview__cardtext">
+                    <h4 class="c-title c-title--4">Modernity</h4>
+                    <p class="c-overview__cardtext">
+                      Lorem ipsum dolora situ alet, consectetur adipiscing elit.
+                      A enim, augue ullamcorper elept tristique sed.
+                    </p>
+                    <a
+                      href="#overview"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </article>
+              </li>
+
+              <li class="c-overview__carditem">
+                <article class="c-overview__cardarticle c-cardshadow o-grid">
+                  <img
+                    src="img/eco.png"
+                    class="c-overview__cardimage"
+                    alt="3D icon mug"
+                  />
+                  <div class="c-overview__cardtext">
+                    <h4 class="c-title c-title--4">Eco-Friendly</h4>
+                    <p class="c-overview__cardtext">
+                      Lorem ipsum dolora situ alet, consectetur adipiscing elit.
+                      A enim, augue ullamcorper elept tristique sed.
+                    </p>
+                    <a
+                      href="#overview"
+                      class="c-link c-textgradient c-textgradient--smooth"
+                      >Learn more</a
+                    >
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="yourproduct" class="c-pagesection c-yourproduct">
+          <div class="c-pagesection__bg">
+            <div class="o-container">
+              <div class="c-yourproduct__content">
+                <div class="c-yourproduct__titlegroup c-titlegroup">
+                  <h3 class="c-title c-title--3">Your product</h3>
+                  <p class="c-titlegroup__text">
+                    Lorem ipsum dolor sit amet, elcol consectetur et adipiscing
+                    elit. Nisl condimentum tortor sed magna.
+                  </p>
+                </div>
+                <ul class="c-yourproduct__content o-grid o-grid--3cols-large">
+                  <li
+                    class="c-yourproduct__carditem c-yourproduct__carditem--style c-cardshadow o-grid"
+                  >
+                    <div class="c-yourproduct__cardtext">
+                      <h4 class="c-title c-title--4">Your style</h4>
+                      <div class="c-yourproduct__colors o-grid o-grid--2cols">
+                        <input
+                          checked
+                          class="c-yourproduct__colorradio c-yourproduct__colorradio--black"
+                          type="radio"
+                          name="color"
+                        />
+                        <input
+                          class="c-yourproduct__colorradio c-yourproduct__colorradio--grey"
+                          type="radio"
+                          name="color"
+                        />
+                        <input
+                          class="c-yourproduct__colorradio c-yourproduct__colorradio--white"
+                          type="radio"
+                          name="color"
+                        />
+                        <input
+                          class="c-yourproduct__colorradio c-yourproduct__colorradio--gold"
+                          type="radio"
+                          name="color"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="js-yourproduct__card c-yourproduct__carditem c-yourproduct__carditem--phone c-cardshadow"
+                  >
+                    <div class="c-yourproduct__cardfront">
+                      <h4 class="c-title c-title--4 c-yourproduct__cardtitle">
+                        Phone connection
+                      </h4>
+                      <input
+                        class="js-yourproduct__ckeckbox80 c-yourproduct__connectioncheck c-yourproduct__checkbox"
+                        type="checkbox"
+                        name="connection"
+                      />
+                      <div class="c-yourproduct__cardbottom">
+                        <p class="c-yourproduct__cardprice">$80</p>
+                        <a
+                          href="#yourproduct"
+                          class="c-yourproduct__cardlink c-yourproduct__btn js-yourproduct__btn--front"
+                          ><img
+                            class="c-yourproduct__btnicon"
+                            src="img/svg/info.svg"
+                            alt="Logo info"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="c-yourproduct__cardback">
+                      <h4 class="c-title c-title--4 c-yourproduct__cardtitle">
+                        More info
+                      </h4>
+                      <p class="c-yourproduct__cardtext">
+                        Lorem ipsum dolora situ alet, consectetur adipiscing
+                        elit. A enim, augue ullamcorper elept tristique sed.
+                      </p>
+                      <div
+                        class="c-yourproduct__cardbottom c-yourproduct__cardbottom--back"
+                      >
+                        <a
+                          href="#yourproduct"
+                          class="c-yourproduct__cardlink c-yourproduct__btn js-yourproduct__btn--back"
+                          ><img
+                            class="c-yourproduct__btnicon"
+                            src="img/svg/back.svg"
+                            alt="Logo info"
+                        /></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="js-yourproduct__card c-yourproduct__carditem c-yourproduct__carditem--engraving c-cardshadow"
+                  >
+                    <div class="c-yourproduct__cardfront">
+                      <h4 class="c-title c-title--4 c-yourproduct__cardtitle">
+                        Engraving
+                      </h4>
+                      <input
+                        class="js-yourproduct__ckeckbox20 c-yourproduct__connectioncheck c-yourproduct__checkbox"
+                        type="checkbox"
+                        name="connection"
+                      />
+                      <div class="c-yourproduct__cardbottom">
+                        <p class="c-yourproduct__cardprice">$20</p>
+                        <a
+                          href="#yourproduct"
+                          class="c-yourproduct__cardlink c-yourproduct__btn js-yourproduct__btn--front"
+                          ><img
+                            class="c-yourproduct__btnicon"
+                            src="img/svg/info.svg"
+                            alt="Logo info"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="c-yourproduct__cardback">
+                      <h4 class="c-title c-title--4 c-yourproduct__cardtitle">
+                        More info
+                      </h4>
+                      <p class="c-yourproduct__cardtext">
+                        Lorem ipsum dolora situ alet, consectetur adipiscing
+                        elit. A enim, augue ullamcorper elept tristique sed.
+                      </p>
+                      <div
+                        class="c-yourproduct__cardbottom c-yourproduct__cardbottom--back"
+                      >
+                        <a
+                          href="#yourproduct"
+                          class="c-yourproduct__cardlink c-yourproduct__btn js-yourproduct__btn--back"
+                          ><img
+                            class="c-yourproduct__btnicon"
+                            src="img/svg/back.svg"
+                            alt="Logo info"
+                        /></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="c-yourproduct__bottom">
+                  <span class="c-yourproduct__allprices"
+                    ><p class="c-yourproduct__pricetxt">$</p>
+                    <p
+                      class="c-yourproduct__pricetxt js-yourproduct__price c-yourproduct__pricetxt"
+                    >
+                      79
+                    </p></span
+                  >
+                  <a
+                    href="#yourproduct"
+                    class="c-yourproduct__finalbtn c-btn c-btn--cta"
+                    >Buy</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-yourproduct__alldeco">
+            <img
+              class="c-deco-circle c-yourproduct__deco--1"
+              src="img/svg/deco-circle/circle4.svg"
+              alt="Decoration circle"
+            />
+            <img
+              class="c-deco-circle c-yourproduct__deco--2"
+              src="img/svg/deco-circle/circle5.svg"
+              alt="Decoration circle"
+            />
+            <img
+              class="c-deco-circle c-yourproduct__deco--3"
+              src="img/svg/deco-circle/circle6.svg"
+              alt="Decoration circle"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="c-sitefooter">
+      <div
+        class="c-pagesection__bg c-pagesection__bg--footer"
+        id="c-pagesection__bg--footer"
+      >
+        <div class="o-container o-container--footer">
+          <div class="c-footer__content">
+            <nav>
+              <ul class="c-mainnav c-footernav">
+                <li class="c-mainnav__item">
+                  <a href="#ourphilo" class="c-mainnav__link">Our philosophy</a>
+                </li>
+                <li class="c-mainnav__item">
+                  <a href="#overview" class="c-mainnav__link">Overview</a>
+                </li>
+                <li class="c-mainnav__item">
+                  <a href="#yourproduct" class="c-mainnav__link"
+                    >Your product</a
+                  >
+                </li>
+                <li class="c-mainnav__item c-mainnav__item--contact">
+                  <a href="#footer" class="c-mainnav__link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="c-footer__socialmedia">
+              <li class="c-socialmedia__item">
+                <a href="#footer" class="c-socialmedia__link">
+                  <img
+                    src="img/svg/facebook.svg"
+                    alt="Facebook icon"
+                    class="c-socialmedia__icon"
+                  />
+                </a>
+              </li>
+              <li class="c-socialmedia__item">
+                <a href="#footer" class="c-socialmedia__link">
+                  <img
+                    src="img/svg/twitter.svg"
+                    alt="Twitter icon"
+                    class="c-socialmedia__icon"
+                  />
+                </a>
+              </li>
+              <li class="c-socialmedia__item">
+                <a href="#footer" class="c-socialmedia__link">
+                  <img
+                    src="img/svg/insta.svg"
+                    alt="Insta icon"
+                    class="c-socialmedia__icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
